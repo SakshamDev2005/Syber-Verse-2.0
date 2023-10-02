@@ -1,0 +1,250 @@
+body {
+  background-color: black;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.nav {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 50px;
+}
+
+.nav ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav ul li {
+  margin: 5px 10px;
+}
+
+.nav .nav-list a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  transition: all ease 1s;
+  padding: 10px 10px;
+}
+
+.nav .nav-list a:hover {
+  color: cyan;
+}
+
+button {
+  color: black;
+  background-color: cyan;
+  font-size: 40px;
+  padding: 5px 5px;
+  border: 2px solid cyan;
+  border-radius: 5px;
+  text-align: center;
+  text-shadow: 10px 10px 10px 10px cyan;
+  transition: all ease .6s;
+} 
+
+.butt1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.but1:hover {
+  color: cyan;
+  background-color: black;
+  text-shadow: 20px 20px 20px 20px cyan;
+  border: 2px solid cyan;
+  border-radius: 5px;
+
+}
+
+body::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+  transition: all ease 1s;
+}
+
+body::-webkit-scrollbar:hover {
+  width: 15px;
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background-color: gainsboro;
+  border: 2px solid gainsboro;
+  border-radius: 20px;
+}
+
+.home {
+  min-height: 500px;
+}
+
+.heading1 {
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  font-stretch: normal;
+  transition: all ease .5s;
+  font-stretch: 150%;
+}
+
+.heading1:hover {
+  font-stretch: 250%;
+}
+
+.heading2,
+.heading3,
+ .heading4 {
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+.about {
+  height: 500px;
+}
+
+#about-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 45px;
+  width: 65%;
+  position: relative;
+  left: 20%;
+}
+
+.social .fa-brands,
+.social .fa-solid {
+  font-size: 50px;
+  transition: 1s ease;
+}
+
+.social .fa-brands:hover,
+.social .fa-solid:hover {
+  transform: scale(1.5);
+}
+
+.social .fa-instagram::after {
+  content: "Instagram";
+  font-size: 10px;
+  padding: 5px 5px;
+  white-space: none;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.social .fa-github::after {
+  content: "GitHub";
+  font-size: 10px;
+  padding: 5px 5px;
+  white-space: none;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.social .fa-discord::after {
+  content: "Discord";
+  font-size: 10px;
+  padding: 5px 5px;
+  white-space: none;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.social .fa-envelope-open::after {
+  content: "Mail";
+  font-size: 10px;
+  padding: 5px 5px;
+  white-space: none;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.social .fa-brands:hover::after {
+  opacity: 1;
+  color: white;
+}
+
+.social .fa-solid:hover::after {
+  color: white;
+  opacity: 1;
+}
+
+.social .fa-instagram {
+  color: mediumvioletred;
+}
+
+.social .fa-github {
+  color: white;
+}
+
+.social .fa-discord {
+  color: #5865f2;
+}
+
+.social .fa-envelope-open {
+  color: white;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.social a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 30px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer {
+  color: white;
+  height: 50px;
+  width: 100%;
+}
+
+.footerh1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.form {
+  height: 550px;
+  padding: 30px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.formm {
+  height: 450px;
+  width: 850px;
+  border: 5px solid gray;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  position: relative;
+  left: 30%;
+  top: 10%;
+}

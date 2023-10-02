@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SYBER VERSE</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="WEB/style.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+    <script src="function.js"></script>
+  </head>
 
+  <body id="body">
+    <nav class="nav" id="nav">
+      <ul class="nav-list">
+        <li><a href="#home" id="bar5">Home</a></li>
+        <li><a href="#socials" id="bar6">Social</a></li>
+        <li><a href="#about" id="bar7">About</a></li>
+        <li><a href="#contact" id="bar8">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="home" id="home">
+      <div>
+        <h1 id="heading1" class="heading1">SYBER VERSE</h1>
+      </div>
+
+      <div class="butt1">
+        <button class="but1">PROJECTS</button>
+      </div>
+      
+    </div>
+    
+    <div class="about" id="about">
+      <div>
+        <h1 id="heading2" class="heading2">ABOUT ME</h1>
+      </div>
+      <div class="about-text" id="about-text">
+        This is Saksham. I Love to Explore and Perceive About Emerging
+        Technology. I Am Computer Fanatic and Front-End Developer but I m also
+        known to knowledge of Back-End Langauges like Python, Java and SQL
+        (MySQL).
+      </div>
+    </div>
+
+    <div class="socials" id="socials">
+      <div>
+        <h1 class="heading3" id="heading3">SOCIAL</h1>
+      </div>
+      <div class="social">
+        <a href="https://discord.com/">
+          <i class="fa-brands fa-discord fa-xs"></i
+        ></a>
+        <a href="https://instagram.com/capablegupta"
+          ><i class="fa-brands fa-instagram fa-xs"></i
+        ></a>
+        <a href="https://github.com/SakshamDev2005"
+          ><i class="fa-brands fa-github fa-xs"></i
+        ></a>
+        <a href="mailto:syberverse2022@gmail.com"
+          ><i class="fa-solid fa-envelope-open fa-xs"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="form" id="contact">
+    <h1 class="heading4">CONTACT FORM</h1>
+    <form class="formm">
+      <div class="inputs">
+        <input type="text" id="fname" name="fname" style="height: 100px; width: 300px; margin: 10px 10px; color: white; background-color: black; border: 2px solid white; text-align: center; font-size: 30px; " placeholder="First Name">
+        <input type="text" id="lname" name="lname" style="height: 100px; width: 300px; margin: 10px 10px; color: white; background-color: black; border: 2px solid white; text-align: center; font-size: 30px; " placeholder="Last Name">
+        <input type="text" id="email" name="email" style="height: 100px; width: 300px; margin: 10px 10px; color: white; background-color: black; border: 2px solid white; text-align: center; font-size: 30px; " placeholder="E-Mail">
+      </div>
+      <input type="text" id="desc"  name="desc"  style="height: 250px; width: 400px; margin: 10px 10px; color: white; background-color: black; border: 2px solid white; position: relative; top: -75%; left: 5%; text-align: center; font-size: 30px; " placeholder="Description(Optional)">
+      <input type="button" value="Submit" id="submit" name="submit" style="text-align: center; font-size: 50px; color: black; background-color: white; border: 2px solid white; border-radius: 5px; position: relative; left: -30%; top: -30%;">
+    </form>
+  </div>
+
+    <div class="footer">
+      <hr>
+      <h1 class="footerh1">Copyright © 2023 SyberVerse</h1>
+    </div>
+    
+  </body>
+
+  <script>
+    ScrollReveal().reveal(".nav", { delay: 1500, distance: "10%" });
+  </script>
+  <script>
+    ScrollReveal().reveal(".home", { delay: 2500, distance: "10%" });
+  </script>
+  <script>
+    ScrollReveal().reveal(".about", { delay: 3500, distance: "10%" });
+  </script>
+  <script>
+    ScrollReveal().reveal(".socials", { delay: 4500, distance: "10%" });
+  </script>
+  <script>
+    ScrollReveal().reveal(".footer", { delay: 5500, distance: "10%" });
+  </script>
+</html>

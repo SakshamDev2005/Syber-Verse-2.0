@@ -8,44 +8,16 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <script src="https://unpkg.com/htmx.org@1.9.6"></script>
-    <script src="function.js"></script>
-
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-
-      // Your web app's Firebase configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyB18GDABIOD_gUnr_StwJ9yh2xTq8vMwnA",
-        authDomain: "sv-contact.firebaseapp.com",
-        projectId: "sv-contact",
-        storageBucket: "sv-contact.appspot.com",
-        messagingSenderId: "252854935154",
-        appId: "1:252854935154:web:707effc676f2438456eceb"
-        };
-
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-  </script>
-
-  <script>
-    function call() {
-      a = document.getElementById("but1");
-      a.setAttribute("href", "WEB/project.html");
-    }
-  </script>
-    
+    <script src="backend.js"></script>
 </head>
 
   <body id="body">
     <nav class="nav" id="nav">
       <ul class="nav-list">
-        <li><a href="#home" id="bar5">Home</a></li>
-        <li><a href="#socials" id="bar6">Social</a></li>
-        <li><a href="#about" id="bar7">About</a></li>
-        <li><a href="#contact" id="bar8">Contact</a></li>
+        <li><a href="#home" id="bar1">Home</a></li>
+        <li><a href="#socials" id="bar2">Social</a></li>
+        <li><a href="#about" id="bar3">About</a></li>
+        <li><a href="#contact" id="bar4">Contact</a></li>
       </ul>
     </nav>
 
@@ -55,7 +27,7 @@
       </div>
 
       <div class="butt1">
-        <button class="but1" id="but1" onclick="Call()">PROJECTS</button>
+        <a href="project.html" target="_blank"><button class="but1" id="but1" onclick="Call()">PROJECTS</button></a>
       </div>
       
     </div>
@@ -95,14 +67,14 @@
 
   <div class="form" id="contact">
     <h1 class="heading4">CONTACT FORM</h1>
-    <form class="formm">
+    <form class="formm" id="contactform">
       <div class="inputs">
         <input type="text" id="fname" name="fname" style="height: 100px; width: 300px; margin: 10px 10px; color: white; background-color: black; border: 2px solid white; text-align: center; font-size: 30px; " placeholder="First Name">
         <input type="text" id="lname" name="lname" style="height: 100px; width: 300px; margin: 10px 10px; color: white; background-color: black; border: 2px solid white; text-align: center; font-size: 30px; " placeholder="Last Name">
         <input type="text" id="email" name="email" style="height: 100px; width: 300px; margin: 10px 10px; color: white; background-color: black; border: 2px solid white; text-align: center; font-size: 30px; " placeholder="E-Mail">
       </div>
       <input type="text" id="desc"  name="desc"  style="height: 250px; width: 400px; margin: 10px 10px; color: white; background-color: black; border: 2px solid white; position: relative; top: -75%; left: 5%; text-align: center; font-size: 30px; " placeholder="Description(Optional)">
-      <input type="button" value="Submit" id="submit" name="submit" style="text-align: center; font-size: 50px; color: black; background-color: white; border: 2px solid white; border-radius: 5px; position: relative; left: -30%; top: -30%;">
+      <input type="submit" value="Submit" id="submit" name="submit" style="text-align: center; font-size: 50px; color: black; background-color: white; border: 2px solid white; border-radius: 5px; position: relative; left: -30%; top: -30%;">
     </form>
   </div>
 
@@ -112,7 +84,10 @@
     </div>
     
   </body>
+  
+  <script type="module" src="backend.js"></script>
 
+  <!--Script tags to run animations on headings-->
   <script>
     ScrollReveal().reveal(".nav", { delay: 1500, distance: "10%" });
   </script>
@@ -124,6 +99,9 @@
   </script>
   <script>
     ScrollReveal().reveal(".socials", { delay: 4500, distance: "10%" });
+  </script>
+  <script>
+    ScrollReveal().reveal(".form", { delay: 5500, distance: "10%" });
   </script>
   <script>
     ScrollReveal().reveal(".footer", { delay: 5500, distance: "10%" });

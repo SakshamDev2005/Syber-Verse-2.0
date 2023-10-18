@@ -1,0 +1,227 @@
+body {
+  background-color: black;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+  transition: all ease 1s;
+}
+
+body::-webkit-scrollbar:hover {
+  width: 15px;
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background-color: gainsboro;
+  border: 2px solid gainsboro;
+  border-radius: 20px;
+}
+
+button {
+  color: black;
+  background-color: cyan;
+  font-size: 40px;
+  padding: 5px 5px;
+  border: 2px solid cyan;
+  border-radius: 5px;
+  text-align: center;
+  text-shadow: 10px 10px 10px 10px cyan;
+  transition: all ease .6s;
+  text-decoration: none;
+  list-style: none;
+} 
+
+.but1:hover {
+  color: cyan;
+  background-color: black;
+  text-shadow: 100px 100px 100px 100px cyan;
+  border: 2px solid cyan;
+  border-radius: 5px;
+}
+
+#socialb {
+  background-color: #39FF14;
+  border: 2px solid #39FF14;
+  text-shadow: 100px 100px 100px 100px #39FF14;
+}
+
+#socialb:hover {
+  color: #39FF14;
+  background-color: black;
+}
+
+#aboutb {
+  background-color: #9f1fef;
+  border: 2px solid #9f1fef;
+  text-shadow: 100px 100px 100px 100px #9f1fef;
+}
+
+#aboutb:hover {
+  color: #9f1fef;
+  background-color: black;
+}
+
+.home {
+  height: 250px;
+  position: relative;
+  top: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.heading1 {
+  font-family: helvetica;
+  font-size: 100px;
+  text-align: center;
+  background: linear-gradient(to right, cyan,#39ff14,#ea07ff,#9f1fef);
+  background-size: 200% auto;	
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 8s cubic-bezier(0.075, 0.82, 0.165, 1.5) infinite;
+  font-stretch: 350%;
+  
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0% center;
+  }
+
+  50% {
+    background-position: 100% top;
+  }
+
+  100% {
+    background-position: 200% bottom;
+  }
+}
+
+.heading1:hover {
+  font-stretch: 550%;
+}
+
+.heading2,
+.heading3,
+ .heading4 {
+  color: white;
+  padding: 20px 30px;
+}
+
+.about {
+  position: relative;
+  top: 15%;
+  height: 300px;
+  display: none;
+  color: white;
+}
+
+#about-text {
+  color: white;
+  font-size: 45px;
+  width: 90%;
+}
+
+.social {
+  height: 100px;
+  position: relative;
+  top: 55%;
+  display: none;
+}
+
+.social a {
+  margin: 20px 50px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.social .fa-brands,
+.social .fa-solid {
+  font-size: 50px;
+  transition: 1s ease;
+}
+
+.social .fa-brands:hover,
+.social .fa-solid:hover {
+  transform: scale(1.5);
+}
+
+.social .fa-instagram::after {
+  content: "Instagram";
+  font-size: 10px;
+  padding: 5px 5px;
+  white-space: none;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.social .fa-github::after {
+  content: "GitHub";
+  font-size: 10px;
+  padding: 5px 5px;
+  white-space: none;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.social .fa-discord::after {
+  content: "Discord";
+  font-size: 10px;
+  padding: 5px 5px;
+  white-space: none;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.social .fa-envelope-open::after {
+  content: "Mail";
+  font-size: 10px;
+  padding: 5px 5px;
+  white-space: none;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.social .fa-brands:hover::after {
+  opacity: 1;
+  color: white;
+}
+
+.social .fa-solid:hover::after {
+  color: white;
+  opacity: 1;
+}
+
+.social .fa-instagram {
+  color: mediumvioletred;
+}
+
+.social .fa-github {
+  color: white;
+}
+
+.social .fa-discord {
+  color: #5865f2;
+}
+
+.social .fa-envelope-open {
+  color: white;
+}
+
+.footer {
+  color: white;
+  height: 50px;
+  width: 100%;
+}
+
+.footerh1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}

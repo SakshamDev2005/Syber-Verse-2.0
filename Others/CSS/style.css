@@ -102,6 +102,16 @@ button {
   }
 }
 
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .heading1:hover {
   font-stretch: 550%;
 }
@@ -119,6 +129,7 @@ button {
   height: 300px;
   display: none;
   color: white;
+  animation: visible 2s ;
 }
 
 #about-text {
@@ -132,6 +143,7 @@ button {
   position: relative;
   top: 55%;
   display: none;
+  animation: visible 2s;
 }
 
 .social a {

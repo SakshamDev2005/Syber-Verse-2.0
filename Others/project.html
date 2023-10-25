@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                background-color: black;
+            }
+
+            .head1, .head2 {
+                color: white;
+                font-size: 70px;
+                text-align: center;
+                background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab , #39FF14, #B026FF);
+                background-size: 200% 200%;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: animate 10s ease infinite;
+              }
+              
+              @keyframes animate {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+              }
+              
+            
+        </style>
     </head>
-    <body style="background-color: black;">
-        <h1 class="head1" style="color: white; font-size: 50px; text-align: center;">SYBER VERSE</h1>
-        <h2 class="head2" style="color: white; font-size: 40px; text-align: center;">PROJECTS</h2>
+    <body>
+        <h1 class="head1">SYBER VERSE</h1>
+        <h2 class="head2">PROJECTS</h2>
     </body>
 </html>

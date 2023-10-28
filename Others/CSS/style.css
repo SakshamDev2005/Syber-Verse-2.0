@@ -2,6 +2,7 @@ body {
   background-color: black;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background-image: url('Others/Extras/bg.gif');
 }
 
 body::-webkit-scrollbar {

@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html>
+
   <head>
+
     <title>SYBER VERSE</title>
+
     <meta charset="UTF-8">
     <meta name="description" content="Portfolio Website">
     <meta name="keywords" content="HTML, CSS, JavaScript, Syber Verse">
     <meta name="author" content="Saksham Gupta">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
     <link rel="stylesheet" href="Others/CSS/style.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
+
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <script src="Others/JS/frontend.js"></script>
+
 </head>
 
   <body id="body">
+
     <h1 id="heading1" class="heading1">SYBER VERSE</h1>
 
-    <div class="home" id="home">
+    <div id="particles-js">
+      <div class="home" id="home">
         <a href="Others/project.html" target="_blank"><button class="but1" id="project1">PROJECTS</button></a>
         <button class="but2" id="socialb" onclick="ff()">SOCIAL</button>
         <button class="but3" id="aboutb" onclick="fff()">ABOUT</button>
+      </div>
     </div>
-
     <div class="socials" id="socials">
       <div class="social" id="social">
-        <a href="https://instagram.com/capablegupta" target="_blank"><i class="fa-brands fa-instagram fa-xs"></i></a>
+        <span id="instagram"><a href="https://instagram.com/capablegupta" target="_blank"><i class="fa-brands fa-instagram fa-xs"></i></a></span>
 
-        <a href="https://github.com/SakshamDev2005" target="_blank"><i class="fa-brands fa-github fa-xs"></i></a>
+        <span id="github"><a href="https://github.com/SakshamDev2005" target="_blank"><i class="fa-brands fa-github fa-xs"></i></a></span>
 
-        <a href="https://discord.com/" target="_blank"><i class="fa-brands fa-discord fa-xs"></i></a>
+        <span id="discord"><a href="https://discord.com/" target="_blank"><i class="fa-brands fa-discord fa-xs"></i></a></span>
 
-        <a href="mailto:syberverse2022@gmail.com" target="_blank"><i class="fa-solid fa-envelope-open fa-xs"></i></a>
+        <span id="email"><a href="mailto:syberverse2022@gmail.com" target="_blank"><i class="fa-solid fa-envelope-open fa-xs"></i></a></span>
 
-        <a href="https://https://www.linkedin.com/in/saksham-gupta-8aa8b3294/" target="_blank"><i class="fa-brands fa-linkedin fa-xs"></i></a>
+        <span id="linkedin"><a href="https://www.linkedin.com/in/saksham-gupta-8aa8b3294/" target="_blank"><i class="fa-brands fa-linkedin fa-xs"></i></a></span>
       </div>
     </div>
 
@@ -61,4 +69,40 @@
   <script>
     ScrollReveal().reveal(".footer", { delay: 1500, distance: "10%" });
   </script>
+
+  <script src="Others/JS/Particles.js"></script>
+  <script src="Others/JS/App.js"></script>
+
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+
+  <script>
+    const tips = [
+      {
+        query: '#discord',
+        content: 'Discord'
+      },
+      {
+        query: '#instagram',
+        content: 'Instagram',
+      },
+      {
+        query: '#linkedin',
+        content: 'LinkedIn',
+      },
+      {
+        query: '#email',
+        content: 'E-Mail',
+      },
+      {
+        query: '#github',
+        content: 'GitHub',
+      },
+    ];
+
+    for (const { query, content } of tips) {
+      tippy(query, { content })
+    }
+  </script>
+
 </html>

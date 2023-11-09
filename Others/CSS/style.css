@@ -1,7 +1,6 @@
 body {
   background-color: black;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -33,6 +32,15 @@ button {
   text-decoration: none;
   list-style: none;
 } 
+
+.heading2,
+.heading3,
+ .heading4 {
+  color: white;
+  padding: 20px 30px;
+}
+
+/*Home Division*/
 
 .but1 {
   background-color: cyan;
@@ -68,25 +76,31 @@ button {
   background-color: transparent;
 }
 
+#particles-js {
+  height: 70vh;
+  position: static;
+}
+
 .home {
-  height: 300px;
+  height: 250px;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background: rgba( 255, 255, 255, 0.2 );
+  justify-content: space-evenly;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.24);
   backdrop-filter: blur( 0px );
   -webkit-backdrop-filter: blur( 0px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.home:hover {
-  top: 5%;
+  padding: 20px 30px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50% , -50%);
 }
 
 .heading1 {
   font-family: helvetica;
-  font-size: 100px;
+  font-size: 75px;
   text-align: center;
   background: linear-gradient(to right, cyan,#39ff14,#ea07ff,#9f1fef);
   background-size: 200% auto;	
@@ -122,12 +136,7 @@ button {
   }
 }
 
-.heading2,
-.heading3,
- .heading4 {
-  color: white;
-  padding: 20px 30px;
-}
+/*About Division*/
 
 .about {
   position: relative;
@@ -135,7 +144,8 @@ button {
   height: 300px;
   display: none;
   color: white;
-  animation: visible 2s ;
+  animation: visible 2s;
+  padding: 15px 30px;
 }
 
 #about-text {
@@ -143,6 +153,8 @@ button {
   font-size: 45px;
   width: 90%;
 }
+
+/*Social Division*/
 
 .social {
   height: 100px;
@@ -154,7 +166,7 @@ button {
 }
 
 .social a {
-  margin: 20px 50px;
+  padding: 20px 40px;
   text-decoration: none;
   list-style: none;
 }
@@ -168,52 +180,6 @@ button {
 .social .fa-brands:hover,
 .social .fa-solid:hover {
   transform: scale(1.5);
-}
-
-.social .fa-instagram::after {
-  content: "Instagram";
-  font-size: 10px;
-  padding: 5px 5px;
-  white-space: none;
-  opacity: 0;
-  transition: 1s ease;
-}
-
-.social .fa-github::after {
-  content: "GitHub";
-  font-size: 10px;
-  padding: 5px 5px;
-  white-space: none;
-  opacity: 0;
-  transition: 1s ease;
-}
-
-.social .fa-discord::after {
-  content: "Discord";
-  font-size: 10px;
-  padding: 5px 5px;
-  white-space: none;
-  opacity: 0;
-  transition: 1s ease;
-}
-
-.social .fa-envelope-open::after {
-  content: "Mail";
-  font-size: 10px;
-  padding: 5px 5px;
-  white-space: none;
-  opacity: 0;
-  transition: 1s ease;
-}
-
-.social .fa-brands:hover::after {
-  opacity: 1;
-  color: white;
-}
-
-.social .fa-solid:hover::after {
-  color: white;
-  opacity: 1;
 }
 
 .social .fa-instagram {
@@ -232,6 +198,10 @@ button {
   color: white;
 }
 
+.social .fa-linkedin {
+  color: blue;
+}
+
 .footer {
   color: white;
   max-height: 35px;
@@ -245,24 +215,47 @@ button {
   font-size: 50px;
 }
 
+/*Other Devices*/
+
 @media all and (max-width: 600px) {
+
+  #particles-js {
+    height: 80vh;
+  }
+
   .home {
-    height: 500px;
+    height: 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding: 20px 0;
+    padding: 20px 5px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
   }
 
   .social {
     height: 250px;
+    width: 100%;
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
   }
 
   .about {
-    height: 1000px;
+    height: 1200px;
+  }
+}
+
+@media all and (min-width: 601px) and (max-width: 1020px) {
+
+  .home {
+    position: absolute;
+    top: 45%;
+  }
+
+  .about {
+    height: 500px;
   }
 }

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>SYBER VERSE</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="SV - Projects">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Syber Verse">
+        <meta name="author" content="Saksham Gupta">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+            <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: black;
+            }
+
+            .fa-solid {
+              color: white;
+              font-size: 40px;
+            }
+
+            @keyframes animate {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+              }
+
+            h1 , h2 {
+                color: white;
+                text-align: center;
+                background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab , #39FF14, #B026FF);
+                background-size: 200% 200%;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: animate 10s ease infinite;
+              }
+
+              .head1 {
+                font-size: 60px;
+              }
+
+              #project .head2 {
+                font-size: 45px;
+              }
+
+              #project-content {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+              }
+
+              #box {
+                margin: 20px 40px;
+                height: 470px;
+                width: 400px;
+                border-radius: 20px;
+                background: rgba( 255, 255, 255, 0.35 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 2px );
+                -webkit-backdrop-filter: blur( 2px );
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
+                transition: all ease .7s;
+                align-self: inherit;
+              }
+
+              #box:hover {
+                transform: scale(1.1);
+              }
+
+              #box-content {
+                padding: 10px 20px;
+                display: flex;
+                flex-direction: column;
+              }
+
+              #box h3 {
+                text-align: center;
+                font-size: 40px;
+                color: cyan;
+                align-self: initial;
+              }
+
+              #box span {
+                color: white;
+                padding: 10px 0;
+                font-size: 25px;
+              }
+
+              .srccode {
+                align-self: initial;
+              }
+
+              .download {
+                align-self: initial;
+              }
+
+              #box details {
+                color: white;
+                padding: 10px 0;
+                align-self: initial;
+                font-size: 20px;
+              }
+
+              #box span a {
+                color: white;
+                text-decoration: none;
+                align-self: initial;
+                transition: all ease .6s;
+              }
+
+              #box span a:hover {
+                color: cyan;
+              }
+
+              @media all and (min-width: 281px) and (max-width: 600px) {
+                #project-content {
+                  flex-direction: column;
+                }
+
+                #box {
+                  height: 465px;
+                  width: 270px;
+                  margin: 30px 10px;
+                }
+
+                #box span {
+                  font-size: 20px;
+                }
+
+                #box details {
+                  font-size: 20px;
+                }
+              }
+
+              @media screen and (max-width: 280px) {
+                #project-content{
+                  flex-direction: column;
+                }
+
+                #box {
+                  height: 480px;
+                  width: 225px;
+                  margin: 30px 10px;
+                }
+
+                #box span {
+                  font-size: 15px;
+                }
+
+                #box details {
+                  font-size: 15px;
+                }
+                
+              }
+
+            
+        </style>
+    </head>
+    <body>
+      <nav>
+        <a href="./index.html"><i class="fa-solid fa-arrow-left"></i></a>
+      </nav>
+      <h1 class="head1">SYBER VERSE</h1>
+
+      <div id="project">
+        <h2 class="head2">PROJECTS</h2>
+        <div id="project-content">
+          
+          <div id="box">
+            <div id="box-content">
+              <h3>SyBot</h3>
+              <span class="download">Download - <a href="Others/Extras/SyBot.exe" download="SyBot.exe" target="_blank">Click Here</a></span>
+              <span class="srccode">Source Code - Not Available</span>
+              <details>
+                <summary>About</summary>
+                <p>This is a ChatBot built in Python which is able to perform multiple tasks and gives you convenience.</p>
+              </details>
+            </div>
+          </div>
+
+          <div id="box">
+            <div id="box-content">
+              <h3>SyBot (VA)</h3>
+              <span class="download">Download - Not Available</span>
+              <span class="srccode">Source Code - <a href="https://github.com/SakshamDev2005/SyBot-VA" target="_blank">GitHub</a></span>
+              <details>
+                <summary>About</summary>
+                <p>This ChatBot contains Voice Assistance feature and powered with PaLM2 Model.</p>
+              </details>
+            </div>
+          </div>    
+
+        </div>
+      </div>
+
+    </body>
+
+    <script>ScrollReveal().reveal(".head1", { delay: 500, distance: "15%" });</script>
+    <script>ScrollReveal().reveal(".head2", { delay: 1000, distance: "15%" });</script>
+    <script>ScrollReveal().reveal("#project-content", { delay: 1300, distance: "15%" });</script>
+
+</html>

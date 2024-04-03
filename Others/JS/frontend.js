@@ -1,35 +1,34 @@
-function ff() {
-    var f = document.getElementById("social");
-    var computedStyle = window.getComputedStyle(f);
 
-    if (computedStyle.display === "none") {
-        f.style.display = "flex";
-        f.style.alignItems = "center";
-        f.style.justifyContent = "space-around";
-        f.style.transition = "all 2.4s";
+var btn1 = document.querySelector("#aboutb")
+var btn2 = document.querySelector("#socialb")
+
+
+btn1.addEventListener("click",function() {
+    var about = document.getElementById("about");
+
+    if (about.style.display === "none") {
+        about.style.display = "flex";
+        about.style.alignItems = "center";
+        about.style.justifyContent = "space-around";
     }
     
     else {
-        f.style.display = "none";
+        about.style.display = "none";
     }
 
-}
+} )
 
-function fff() {
-    var ff = document.getElementById("about");
-    var computedStyle1 = window.getComputedStyle(ff);
+btn2.addEventListener("click",function() {
+    var social = document.getElementById("social");
 
-    if (computedStyle1.display === "none") {
-        ff.style.display = "flex";
-        ff.style.alignItems = "center";
-        ff.style.justifyContent = "space-around";
-        ff.style.color = "white";
+    if (social.style.display === "none") {
+        social.style.display = "flex";
+        social.style.alignItems = "center";
+        social.style.justifyContent = "space-around";
     }
-
+    
     else {
-        ff.style.display = "none";
+        social.style.display = "none";
     }
 
-}
-
-
+} )

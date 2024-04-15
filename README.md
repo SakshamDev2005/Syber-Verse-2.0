@@ -7,6 +7,9 @@ Live Demo at [Syber Verse v2](https://sakshamdev2005.github.io/SyberVerse-v2/)
 This project uses the following technologies:
 
 HTML5
+
 CSS3
+
 JavaScript 
+
 PHP (will not run on the live demo)

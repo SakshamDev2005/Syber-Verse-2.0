@@ -77,13 +77,24 @@ button {
   background-color: transparent;
 }
 
+#contactb {
+  background-color: #ef1f45;
+  border: 2px solid #ef1f45;
+}
+
+#contactb:hover {
+  color: #ef1f45;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
 #particles-js {
   height: 70vh;
   position: static;
 }
 
 .home {
-  height: 250px;
+  height: 300px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -108,7 +119,7 @@ button {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: animate 8s cubic-bezier(0.075, 0.82, 0.165, 1.5) infinite;
+  animation: animate 8s all ease linear infinite;
   font-stretch: 350%;
   
 }
@@ -211,6 +222,71 @@ button {
 .social .fa-linkedin {
   color: #0077b5;
 }
+
+/* Form Division */
+
+.form {
+  margin: 30px auto;
+  display: none;
+}
+
+.formm {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  background: rgba( 255, 255, 255, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 2px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  width: 350px;
+}
+
+.formm label {
+  color: rgba(233, 233, 233, 0.944);
+  font-size: 25px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: all ease .65s;
+  margin: 10px 0;
+}
+
+.formm label:hover{
+  color: cyan;
+}
+
+.formm input {
+  background: rgba( 255, 255, 255, 0.35 );;
+  border: 1px solid transparent;
+  font-size: 25px;
+  border-radius: 20px;
+}
+
+.formm #desc {
+  height: 150px;
+
+}
+
+.formm #submit {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-size: 35px;
+  color: white;
+  border-radius: 10px;
+  transition: all ease .6s;
+  background: transparent;
+}
+
+.formm #submit:hover{
+  color: cyan;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+/*Footer Division*/
 
 .footer {
   color: white;

@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="Others/CSS/style.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
+    <link rel="shortcut icon" type="image/png" href="Others/Others/SV.png">
 
 
 </head>
@@ -23,9 +24,10 @@
 
     <div id="particles-js">
       <div class="home" id="home">
-        <a href="./project.html"><button class="but1" id="project1">PROJECTS</button></a>
+        <a href="project.html"><button class="but1" id="project1">PROJECTS</button></a>
         <button class="but2" id="socialb">SOCIAL</button>
         <button class="but3" id="aboutb">ABOUT</button>
+        <button class="but4" id="contactb">CONTACT</button>
       </div>
     </div>
     <div class="socials" id="socials">
@@ -48,6 +50,19 @@
         <hr style="visibility: hidden;">
         Yet, my skills extend beyond code; I am adept at the art of Graphic Design. Figma, Adobe Express and Canva are my preferred tools for translating ideas and to showcase my Graphic Designing skills.
       </div>
+    </div>
+
+    <div id="form" class="form">
+      <form class="formm" action="Others/process.php" method="post">
+        <h3 style="font-size: 50px; margin-bottom: 100px;">Contact Form</h3>
+        <label for="name" id="name">Name</label>
+        <input type="text" id="pname" name="name" placeholder="Your Name"><br>
+        <label for="email" id="email">Email</label>
+        <input type="email" id="mail" name="email" placeholder="Your Mail"><br>
+        <label for="description" id="description">Description</label>
+        <input type="text" id="desc" name="description" placeholder="Description">
+        <input type="submit" value="Submit" id="submit">
+      </form>
     </div>
 
     <div class="footer">

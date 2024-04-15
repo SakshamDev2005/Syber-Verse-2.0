@@ -12,4 +12,4 @@ CSS3
 
 JavaScript 
 
-PHP (will not run on the live demo)
+PHP (will not run in the live demo)
